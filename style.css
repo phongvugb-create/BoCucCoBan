@@ -1,0 +1,189 @@
+
+/* Định dạng chung */
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Khung bao toàn bộ trang */
+#main {
+    width: 960px;
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Phần đầu trang */
+#head {
+    height: 140px;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 5px;
+    background-color: #d9edf7;
+    border: 1px solid #8abbd1;
+}
+
+#head h1 {
+    margin: 0 0 10px;
+    color: #245269;
+}
+
+#head p {
+    margin: 0;
+}
+
+/* Thanh liên kết */
+#head-link {
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    background-color: #333;
+}
+
+#head-link a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+#head-link a:hover {
+    text-decoration: underline;
+}
+
+/* Cột trái */
+#left {
+    width: 200px;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-right: 5px;
+    float: left;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+#left h3 {
+    margin-top: 0;
+}
+
+#left ul {
+    padding-left: 20px;
+}
+
+#left li {
+    margin-bottom: 12px;
+}
+
+#left a {
+    color: #246a9a;
+    text-decoration: none;
+}
+
+/* Nội dung chính */
+#content {
+    width: 540px;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-right: 5px;
+    float: left;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.section {
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #286090;
+}
+
+.photo-placeholder {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e8;
+    color: #666;
+}
+
+/* Cột phải */
+#right {
+    width: 205px;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    float: right;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+.widget {
+    padding: 10px;
+    margin-bottom: 12px;
+    background-color: #eaf4e5;
+    border: 1px solid #c9dfbd;
+}
+
+.widget h3 {
+    margin-top: 0;
+    color: #35632c;
+}
+
+/* Xóa tác động của float */
+.clear {
+    clear: both;
+}
+
+/* Chân trang */
+#footer {
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+}
+
+#footer p {
+    margin-top: 0;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Điều chỉnh cho màn hình nhỏ */
+@media (max-width: 760px) {
+    #main {
+        max-width: 95%;
+    }
+
+    #left,
+    #content,
+    #right {
+        width: 100%;
+        min-height: auto;
+        float: none;
+        margin: 0 0 10px;
+    }
+
+    #head-link a {
+        display: inline-block;
+        margin: 5px 12px 5px 0;
+    }
+}

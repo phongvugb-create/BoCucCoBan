@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web bố cục bằng DIV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Phần đầu trang -->
+        <div id="head">
+            <h1>MY WEBSITE</h1>
+            <p>Chào mừng bạn đến với trang web của chúng tôi</p>
+        </div>
+
+        <!-- Thanh liên kết đầu trang -->
+        <div id="head-link">
+            <a href="#">Home</a>
+            <a href="#">Students</a>
+            <a href="#">Courses</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Cột bên trái -->
+        <div id="left">
+            <h3>Danh mục</h3>
+            <ul>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Học tập</a></li>
+                <li><a href="#">Công nghệ</a></li>
+                <li><a href="#">Giải trí</a></li>
+                <li><a href="#">Thể thao</a></li>
+            </ul>
+        </div>
+
+        <!-- Nội dung chính -->
+        <div id="content">
+            <div class="section hot-news">
+                <h2>Hot News</h2>
+                <p>
+                    Cập nhật những tin tức mới nhất về học tập,
+                    công nghệ và cuộc sống.
+                </p>
+            </div>
+
+            <div class="section photo-slide">
+                <h2>Photo Slide</h2>
+                <div class="photo-placeholder">
+                    Hình ảnh nổi bật
+                </div>
+            </div>
+
+            <div class="section news">
+                <h2>News 1</h2>
+                <p>
+                    Đây là nội dung tin tức thứ nhất.
+                    Bạn có thể thay thế bằng thông tin của mình.
+                </p>
+            </div>
+
+            <div class="section news">
+                <h2>News 2</h2>
+                <p>
+                    Đây là nội dung tin tức thứ hai,
+                    được trình bày trong khu vực nội dung chính.
+                </p>
+            </div>
+        </div>
+
+        <!-- Cột bên phải -->
+        <div id="right">
+            <div class="widget">
+                <h3>Lịch</h3>
+                <p>Thứ Hai - Thứ Sáu</p>
+                <p>08:00 - 17:00</p>
+            </div>
+
+            <div class="widget">
+                <h3>Thống kê</h3>
+                <p>Lượt truy cập: 1.250</p>
+                <p>Thành viên: 320</p>
+            </div>
+
+            <div class="widget">
+                <h3>Thông tin</h3>
+                <p>Chào mừng bạn ghé thăm website!</p>
+            </div>
+        </div>
+
+        <!-- Xóa float trước footer -->
+        <div class="clear"></div>
+
+        <!-- Chân trang -->
+        <div id="footer">
+            <p>© 2026 My Website. All rights reserved.</p>
+            <a href="#">Home</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
